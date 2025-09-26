@@ -1,5 +1,7 @@
 # Zero inflated poisson model
 
+# Author: Federico Boiocchi
+
 # Y_i ~ ZIP (mu_i,pi_i)
 
 # Y_i response variable of a Poisson regression
@@ -121,3 +123,4 @@ summ_glm <- summary(mod_glm)
 k <- 4
 loglik_glm <- (summ_glm$aic - 2 * k) / (-2)
 logLik(mod_glm)
+
