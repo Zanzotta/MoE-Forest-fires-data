@@ -84,7 +84,7 @@ summ1$loglik
 library(pscl)
 library(tidyverse)
 
-forest <- read.csv("C:\\Users\\andre\\Desktop\\statistica computazionale\\HW_stat_comp\\forestfires.csv")
+forest <- read.csv("~\forestfires.csv")
 str(forest)
 forest <- forest[-c(1:8, 12)] # select useful variables (Temp, Wind, RH)
 
@@ -123,4 +123,5 @@ summ_glm <- summary(mod_glm)
 k <- 4
 loglik_glm <- (summ_glm$aic - 2 * k) / (-2)
 logLik(mod_glm)
+
 
